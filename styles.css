@@ -154,7 +154,34 @@ h1 {
     padding-right: 80px;
 }
 
+/* skills */
 
+.skills {
+    padding: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 90vw);
+    grid-auto-rows: minmax(8vh, auto);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.skills h2 {
+    grid-column: 1 / 2;
+    font-size: 4rem;
+    display: flex;
+    flex: auto;
+}
+
+.fab {
+    display: inline-flex;
+    font-size: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+
+}
 
 
 
