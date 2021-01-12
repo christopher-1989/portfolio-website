@@ -105,8 +105,8 @@ body {
     padding: 40px;
     width: 100%;
     display: grid;
-    grid-template: repeat(7, 10vh) / repeat(1, 90vw);
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 90vw);
+    grid-auto-rows: minmax(10vh, auto);
     align-items: center;
     justify-items: center;
 }
@@ -146,7 +146,6 @@ h1 {
 
 .about-me p {
     grid-column: 1 / 2;
-    grid-row: 5 / 8;
     line-height: 5rem;
     font-size: 2.5rem;
     display: flex;
