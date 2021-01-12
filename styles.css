@@ -152,6 +152,7 @@ h1 {
     flex: auto;
     padding-left: 80px;
     padding-right: 80px;
+    text-align: center;
 }
 
 /* skills */
@@ -164,7 +165,6 @@ h1 {
     grid-auto-rows: minmax(8vh, auto);
     align-items: center;
     justify-items: center;
-    justify-content: space-between;
 }
 
 .skills h2 {
@@ -174,13 +174,14 @@ h1 {
     flex: auto;
 }
 
-.fab {
-    display: inline-flex;
-    font-size: 4rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    
+.skill-set {
+    width: 75%;
+    text-align: center;
+}
 
+.fab {
+    font-size: 7rem;
+    padding: 1.5rem;
 }
 
 
