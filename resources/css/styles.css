@@ -115,7 +115,7 @@ h1 {
     font-size: 5rem;
     display: flex;
     flex: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     grid-column: 1 / 2;
 }
 
@@ -216,7 +216,7 @@ h1 {
     border: 2px solid #fffe;
     border-radius: 10%;
     justify-content: center;
-    padding-top: 10vw;
+    padding-top: 8vw;
     text-align: center;
 }
 
@@ -232,3 +232,44 @@ h1 {
     height: auto;
 }
 
+/* footer */
+
+footer {
+    padding: 40px;
+    background-color: #0b925e;
+    display: grid;
+    grid-template-columns: repeat(1, 90vw);
+    grid-auto-rows: minmax(10vh, auto);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-button {
+    font-size: 5rem;
+    text-decoration: none;
+    width: fit-content;
+    color: #fffe;
+    padding: 40px;
+    border: 2px solid #fffe;
+    border-radius: 5%;
+}   
+/*ONLY USE HOVER ON DESKTOP DEVICES*/
+
+
+.project:hover {
+    background-color: #fffe;
+    color: #201F2E;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.footer-button:hover {
+    background-color: #fffe;
+    color: #201F2E;
+    border: 2px solid #201f2e;
+    transition: all 0.2s ease-in-out;
+}
+
+/* contact.html css */
