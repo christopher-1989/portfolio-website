@@ -20,7 +20,6 @@ body {
     height: 8vh;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
@@ -29,37 +28,50 @@ body {
     text-decoration: none;
 }
 
-.nav-container {
+.nav-home-container {
     height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 4rem;
+    position: fixed;
+    justify-content: left;
+    font-size: 2rem;
 }
 
 .home-button {
     color: #201F2E;
     text-decoration: none;
-    margin-left: 3rem;
     padding: 10px 20px;
+    display: flex;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.menu-icon {
+    display: flex;
+    width: 80px;
+    position: fixed;
+    right: 0%;
+    text-align: right;
+    justify-content: center;
 }
 
 .nav-menu-button {
+    display: flex;
     color: #fffe;
-    position: relative;
+    cursor: pointer;
+    margin-right: 1rem;
 }
 
 .fa-bars {
     color: #201F2E;
     margin-right: 3rem;
     padding: 10px 20px;
-    font-size: 4rem;
+    font-size: 2rem;
     justify-content: center;
 }
 
 .nav-menu {
     position: relative;
-    left: -200%;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -68,9 +80,12 @@ body {
     width: 100vw;
     justify-content: end;
     margin-right: 2rem;
+    left: -200%;
+    top: -100%
 }
 
 .nav-item {
+    display: block;
     height: 80px;
 }
 
@@ -88,6 +103,7 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    cursor: pointer;
 }
 
 .menu-icon {
@@ -104,27 +120,29 @@ body {
 /* About me */
 
 .about-me {
-    padding: 40px;
+    padding: 6vw;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 92vw);
-    grid-auto-rows: minmax(10vh, auto);
+    grid-template-columns: repeat(1, 88vw);
+    grid-auto-rows: minmax(8vh, auto);
     align-items: center;
     justify-items: center;
 }
 
 h1 {
-    font-size: 5rem;
-    display: flex;
+    font-size: 3rem;
+    display: inline-flex;
     flex: auto;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     grid-column: 1 / 2;
+    text-align: center;
 }
 
 .circular-portrait {
     position: relative;
-    width: 400px;
-    max-height: 400px;
+    width: 250px;
+    max-height: 250px;
     overflow: hidden;    
     border-radius: 50%;
     grid-column: 1 / 2;
@@ -136,43 +154,47 @@ h1 {
     height: auto;
     display: flex;
     flex: auto;
+    size: 50%;
 }
 
 .about-me h2 {
     
-    padding-top: 15vw;
+    padding-top: 10vw;
     margin: 0;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: flex;
     flex: auto;
+    margin-bottom: 2rem;
 }
 
 .about-me p {
     box-sizing: border-box;
     width: 80%;
     grid-column: 1 / 2;
-    line-height: 5rem;
-    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
     display: flex;
     flex: auto;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
-.quote {
-    margin-top: 50px;
+#quote {
+    margin-top: 1rem;
+    padding: 10vw 0;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
 }
 
 /* skills */
 
 .skills {
-    padding: 40px;
+    padding: 6vw;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 92vw);
+    grid-template-columns: repeat(1, 88vw);
     grid-auto-rows: minmax(8vh, auto);
     align-items: center;
     justify-items: center;
@@ -181,9 +203,10 @@ h1 {
 .skills h2 {
     margin-top: 12vw;
     grid-column: 1 / 2;
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: flex;
     flex: auto;
+    margin-bottom: 3rem;
 }
 
 .skill-set {
@@ -192,35 +215,37 @@ h1 {
 }
 
 .fab {
-    font-size: 7rem;
+    font-size: 4rem;
     padding: 1.5rem;
 }
 
 /* projects */
 
 .projects {
-    padding: 40px;
+    padding: 6vw;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 92vw);
+    grid-template-columns: repeat(1, 88vw);
     grid-template-rows: 10vh;
-    grid-auto-rows: minmax(30vh, auto);
+    grid-auto-rows: minmax(30vw, auto);
     align-items: center;
     justify-items: center;
-    grid-gap: 40px;
+    grid-gap: 2rem;;
+    flex-grow: 1;
 }
 
 .projects h2 {
-    margin-top: 10vw;
     grid-column: 1 / 2;
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: flex;
     flex: auto;
+    margin-top: 10vw;
+    margin-bottom: 3rem;
 }
 
 .project {
     display: block;
-    font-size: 2.5rem;
+    font-size: 1rem;
     border: 2px solid #fffe;
     border-radius: 10%;
     justify-content: center;
@@ -243,10 +268,10 @@ h1 {
 /* footer */
 
 footer {
-    padding: 40px;
+    padding: 6vw;
     background-color: #0b925e;
     display: grid;
-    grid-template-columns: repeat(1, 90vw);
+    grid-template-columns: repeat(1, 88vw);
     grid-auto-rows: minmax(10vh, auto);
     text-align: center;
     align-items: center;
@@ -254,13 +279,14 @@ footer {
 }
 
 .footer-button {
-    font-size: 5rem;
+    font-size: 3rem;
     text-decoration: none;
     width: fit-content;
     color: #fffe;
-    padding: 40px;
+    padding: 6vw;
     border: 2px solid #fffe;
     border-radius: 5%;
+    cursor: pointer;
 }   
 
 
@@ -299,6 +325,7 @@ footer {
     color: #fffe;
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
 
 @media (hover: hover) {
@@ -329,7 +356,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
     /*ONLY USE HOVER ON DESKTOP DEVICES*/
     .menu-icon {
         display: none;
@@ -344,6 +371,7 @@ footer {
         align-content: center;
         grid-template-rows: 80px;
         grid-auto-columns: repeat(12, auto);
+        top: 0;
     }
 
     .nav-item {
@@ -352,19 +380,10 @@ footer {
     }
 }
 
-@media only screen and (mind-width: 400px) {
-    .menu-icon {
-        display: none;
-    }
-
-
-}
-
 @media screen and (prefers-reduced-motion: no-preference) {
     html,
     body {
       scroll-behavior: smooth;
-
     }
   }
 

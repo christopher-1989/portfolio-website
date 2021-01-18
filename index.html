@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <!-- The following is required to give the browser information about how to control the page's dimensions and scaling -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Portfolio</title>
   <!-- The following link is required to use FontAwesome icons. Check to see link and access key still work. -->
   <link
@@ -19,14 +20,13 @@
 
 <body>
   <nav class="navbar">
-    <div class="nav-container" >
+    <div class="nav-home-container" >
         <a class="home-button" href="index.html">Portfolio</a>
-
-        <div class="menu-icon" >
-            <a class='nav-menu-button'>
-                <i class='fas fa-bars'></i>
-            </a>
-        </div>
+    </div>
+    <div class="menu-icon" >
+        <a class='nav-menu-button'>
+            <i class='fas fa-bars'></i>
+        </a>
     </div>
     <div class="nav-menu">
         <div class="nav-item">
@@ -46,7 +46,7 @@
   <main class="main-container">
     <section class="about-me">
         <h1 class="name">Christofer MacDonald</h1>
-        <p class="quote"><em>
+        <p id="quote"><em>
             "You don't know what you don't know" - unknown
         </em></p>
         <div class="circular-portrait">
