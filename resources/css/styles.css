@@ -1,9 +1,12 @@
 /* universal */
 
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 html,
 body {
-    block-size: border-box;
-    margin: 0 0;
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #201F2E;
@@ -14,8 +17,8 @@ body {
 .navbar {
     background: #fffe;
     color: #201F2E;
-    height: 80px;
-    width: 101%;
+    height: 8vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,14 +27,10 @@ body {
     top: -1%;
     z-index: 5;
     text-decoration: none;
-    padding-top: 40px;
-    padding-bottom: 30px;
-
 }
 
 .nav-container {
     height: 80px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +58,7 @@ body {
 }
 
 .nav-menu {
-    position: absolute;
+    position: relative;
     left: -200%;
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -73,6 +72,12 @@ body {
 
 .nav-item {
     height: 80px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #201F2E;
+    font-size: 1.5rem;
 }
 
 .nav-links {
@@ -106,7 +111,7 @@ body {
     padding: 40px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 90vw);
+    grid-template-columns: repeat(1, 92vw);
     grid-auto-rows: minmax(10vh, auto);
     align-items: center;
     justify-items: center;
@@ -138,6 +143,9 @@ h1 {
 }
 
 .about-me h2 {
+    
+    padding-top: 15vw;
+    margin: 0;
     grid-column: 1 / 2;
     grid-row: 5 / 6;
     font-size: 4rem;
@@ -146,14 +154,15 @@ h1 {
 }
 
 .about-me p {
+    box-sizing: border-box;
+    width: 80%;
     grid-column: 1 / 2;
     line-height: 5rem;
     font-size: 2.5rem;
     display: flex;
     flex: auto;
-    padding-left: 80px;
-    padding-right: 80px;
     text-align: center;
+    padding: 2rem;
 }
 
 .quote {
@@ -167,13 +176,14 @@ h1 {
     padding: 40px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 90vw);
+    grid-template-columns: repeat(1, 92vw);
     grid-auto-rows: minmax(8vh, auto);
     align-items: center;
     justify-items: center;
 }
 
 .skills h2 {
+    margin-top: 12vw;
     grid-column: 1 / 2;
     font-size: 4rem;
     display: flex;
@@ -196,7 +206,7 @@ h1 {
     padding: 40px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 90vw);
+    grid-template-columns: repeat(1, 92vw);
     grid-template-rows: 10vh;
     grid-auto-rows: minmax(30vh, auto);
     align-items: center;
@@ -205,6 +215,7 @@ h1 {
 }
 
 .projects h2 {
+    margin-top: 10vw;
     grid-column: 1 / 2;
     font-size: 4rem;
     display: flex;
@@ -283,31 +294,69 @@ footer {
 
 .cont {
     font-size: 7rem;
+    color: #fffe;
     padding: 1.5rem;
+    text-decoration: none;
 }
 
-
-/*ONLY USE HOVER ON DESKTOP DEVICES*/
-
-
-.project:hover {
-    background-color: #fffe;
-    color: #201F2E;
-    border: none;
-    transition: all 0.2s ease-in-out;
+.link {
+    color: #fffe;
+    text-decoration: none;
+    display: block;
 }
 
+@media only screen and (min-width: 960px) {
+    /*ONLY USE HOVER ON DESKTOP DEVICES*/
+    .project:hover {
+        background-color: #fffe;
+        color: #201F2E;
+        border: none;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .footer-button:hover {
+        background-color: #fffe;
+        color: #201F2E;
+        border: 2px solid #201f2e;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .contact-list:hover {
+        background-color: #fffe;
+        color: #201F2E;
+        border: none;
+        transition: all 0.2s ease-in-out;
+    }
 
-.footer-button:hover {
-    background-color: #fffe;
-    color: #201F2E;
-    border: 2px solid #201f2e;
-    transition: all 0.2s ease-in-out;
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        left: auto;
+        display: grid;
+        flex-direction: row;
+        text-align: center;
+        align-content: center;
+        grid-template-rows: 80px;
+        grid-auto-columns: repeat(12, auto);
+    }
+
+    .nav-item {
+        width: 130px;
+        padding-top: 30px;
+    }
+
+
+
 }
 
-.contact-list:hover {
-    background-color: #fffe;
-    color: #201F2E;
-    border: none;
-    transition: all 0.2s ease-in-out;
-}
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+
+    }
+  }
+
