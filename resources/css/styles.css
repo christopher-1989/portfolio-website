@@ -95,6 +95,8 @@ body {
     color: #201F2E;
     font-size: 1.5rem;
     display: block;
+    width: 100%;
+
 }
 
 .nav-item {
@@ -105,8 +107,9 @@ body {
     padding: 0.5rem;
     height: 4.5rem;
     cursor: pointer;
-    width: 120px;
+    width: 100%;
     justify-items: center;
+    font-weight: bolder;
 }
 
 .menu-icon {
@@ -228,12 +231,12 @@ h1 {
     padding: 6vw;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 88vw);
+    grid-template-columns: repeat(1, 86vw);
     grid-template-rows: 20vh;
     grid-auto-rows: minmax(30vw, auto);
     align-items: center;
     justify-items: center;
-    grid-gap: 2rem;;
+    grid-gap: 2vw;
     flex-grow: 1;
 }
 
@@ -248,7 +251,7 @@ h1 {
 
 .project {
     display: block;
-    font-size: 1rem;
+    font-size: 1.25rem;
     border: 2px solid #fffe;
     border-radius: 10%;
     justify-content: center;
@@ -355,9 +358,12 @@ footer {
     
     .contact-list:hover {
         background-color: #fffe;
-        color: #201F2E;
         border: none;
         transition: all 0.2s ease-in-out;
+    }
+
+    .link:hover {
+        color: #201F2E;
     }
 
     .nav-links:hover {
@@ -372,6 +378,21 @@ footer {
         display: none;
     }
 
+    .nav-button {
+        font-size: 1.75rem;
+        font-weight: bolder;
+    }
+
+    .home-button {
+        font-size: 2.25rem;
+        font-weight: bolder;
+    }
+
+    .nav-item  {
+        width: 140px;
+        margin-top: 5px;
+    }
+
     .nav-menu {
         position: relative;
         left: auto;
@@ -384,8 +405,54 @@ footer {
         top: 0;
     }
 
-    .skills h2 {
-        margin-top: 5vw;
+    .name {
+        font-size: 3.5rem;
+        padding: 3rem;
+    }
+
+    #quote {
+        font-size: 3rem;
+        padding: 3rem;
+        line-height: 4rem;
+    }
+
+    .about-me h2 {
+        padding-top: 8vw;
+        padding-bottom: 1rem;
+        font-size: 3.25rem;
+    }
+
+    .about-me p {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        font-weight: lighter;
+    }
+
+    .projects {
+        grid-template-rows: 10vh;
+        grid-template-columns: repeat(2, 43vw);
+        grid-auto-rows: 43vw;
+    }
+
+    .skills h2,
+    .projects h2 {
+        font-size: 3.25rem;
+        margin-top: 2rem;
+    }
+
+    .projects h2 {
+        grid-column: 1 / 3;
+    }
+
+    .project {
+        font-size: 2.5rem;
+        padding-top: 2vw;
+    }
+
+    .image-container {
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -395,12 +462,3 @@ footer {
       scroll-behavior: smooth;
     }
   }
-
-/* 
-  To do:
-
-  a) change all of the px units to vw units in contact.html
-  b) create onclick functionality for
-    - .nav-menu
-    - .cont-email
-*/

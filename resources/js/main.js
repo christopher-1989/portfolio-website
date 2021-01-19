@@ -58,6 +58,21 @@ const handleEvent = () => {
 }
 
 navMenuButton.onclick = handleEvent;
-navButtonOne.onclick = handleEvent;
-navButtonTwo.onclick = handleEvent;
-navButtonThree.onclick = handleEvent;
+
+navButtonOne.onclick = function () {
+    if (screen.width < 901) {
+        handleEvent();
+    }
+};
+navButtonTwo.onclick = function () {
+    if (screen.width < 901) {
+        handleEvent();
+    }
+};
+navButtonThree.onclick = function () {
+    if (screen.width < 901) {
+        handleEvent();
+    }
+};
+
+
