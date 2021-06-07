@@ -2,9 +2,9 @@ let navMenuButton = document.getElementById('nav-menu-button');
 let navMenu = document.getElementById('nav-menu');
 let barsTimes = document.getElementById('bars');
 let navBar  = document.getElementById('navbar');
-let navButtonOne = document.getElementById('button-one');
-let navButtonTwo = document.getElementById('button-two');
-let navButtonThree = document.getElementById('button-three');
+let aboutButton = document.getElementById('button-one');
+let skillsButton = document.getElementById('button-two');
+let projectsButton = document.getElementById('button-three');
 
 let navActive = false;
 
@@ -38,8 +38,6 @@ const hideNav = () => {
     navMenu.style.display = 'grid';
     navMenu.style.flexDirection = "none";
 
-    // navButtons.removeEventListener('onclick', hideNav);
-
     navActive = false;
 }
 
@@ -51,28 +49,26 @@ const checkBarsClass = () => {
     }
 }
 
-const handleEvent = () => {
+const handleCloseNavMenu = () => {
     const updateClass = checkBarsClass() ? 'fas fa-times' : 'fas fa-bars';
     barsTimes.className = updateClass;
+    console.log(screen.width)
     navActive ? hideNav() : showNav();
 }
 
-navMenuButton.onclick = handleEvent;
+const handleNavMenuClick = () => {
+    if (screen.width < 901) {
+        const updateClass = checkBarsClass() ? 'fas fa-times' : 'fas fa-bars';
+        barsTimes.className = updateClass;
+        console.log(screen.width)
+        navActive ? hideNav() : showNav();
+    }
+}
 
-navButtonOne.onclick = function () {
-    if (screen.width < 901) {
-        handleEvent();
-    }
-};
-navButtonTwo.onclick = function () {
-    if (screen.width < 901) {
-        handleEvent();
-    }
-};
-navButtonThree.onclick = function () {
-    if (screen.width < 901) {
-        handleEvent();
-    }
-};
+navMenuButton.onclick = handleCloseNavMenu;
+
+aboutButton.onclick = handleNavMenuClick;
+skillsButton.onclick = handleNavMenuClick;
+projectsButton.onclick = handleNavMenuClick;
 
 
