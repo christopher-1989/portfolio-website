@@ -52,15 +52,14 @@ const checkBarsClass = () => {
 const handleCloseNavMenu = () => {
     const updateClass = checkBarsClass() ? 'fas fa-times' : 'fas fa-bars';
     barsTimes.className = updateClass;
-    console.log(screen.width)
     navActive ? hideNav() : showNav();
 }
 
 const handleNavMenuClick = () => {
-    if (screen.width < 901) {
+    //The following line was changed from 'screen' to 'window' to enable functionality on resized desktop browsers.
+    if (window.innerWidth < 901) {
         const updateClass = checkBarsClass() ? 'fas fa-times' : 'fas fa-bars';
         barsTimes.className = updateClass;
-        console.log(screen.width)
         navActive ? hideNav() : showNav();
     }
 }
