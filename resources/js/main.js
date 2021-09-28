@@ -15,9 +15,9 @@ const showNav = () => {
 
     navMenu.style.width = '100%';
     navMenu.style.float = 'none';
-    navMenu.style.top = '20vh';
+    navMenu.style.top = '30vh';
     navMenu.style.left = '0';
-    navMenu.style.height = '90vh';
+    navMenu.style.height = '20vh';
     navMenu.style.display = 'flex';
     navMenu.style.flexDirection = "column";
     
@@ -70,4 +70,8 @@ aboutButton.onclick = handleNavMenuClick;
 skillsButton.onclick = handleNavMenuClick;
 projectsButton.onclick = handleNavMenuClick;
 
+let projectAlert = document.getElementById('tmc-project');
 
+projectAlert.onclick = function () {
+    alert("Video demonstration of app functionality coming soon.")
+}

@@ -45,7 +45,7 @@
   </nav>
   <main class="main-container">
     <section class="about-me">
-        <h1 class="name">Christofer MacDonald</h1>
+        <h1 class="name">Christopher McDonald</h1>
         <p id="quote"><em>
             "You don't know what you don't know"<br>- unknown
         </em></p>
@@ -53,46 +53,91 @@
             <img src="resources/headshot.jpg" class="headshot" alt="headshot" />
         </div>
         <h2 class="section-heading" id="about-me">About Me</h2>
-        <p class="first-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, tempora minus, sapiente maiores voluptatum non vel, corporis similique totam eveniet hic enim dolore quo qui quis eligendi. Similique, natus pariatur.</p>
-        <p class="second-para" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, tempora minus, sapiente maiores voluptatum non vel, corporis similique totam eveniet hic enim dolore quo qui quis eligendi. Similique, natus pariatur.</p>
+        <p class="first-para">
+            I started my programming journey while studying my Masters of Education in early 2018. 
+            I was researching advanced pedagogical methods and one segment of study included big data and machine learning. 
+            I found these concepts interesting so when I completed my Masters degree I started learning how to code. 
+            Initially I learnt Python until late 2018 when my understanding culminated in projects that developed skills such as scraping websites, visualising data, and using machine learning algorithms.
+            Next I learnt Javascript. I was interested in learning Javascript as it is popular in both front-end and back-end architectures. 
+            Along the javascript journey I have developed skills using HTML, CSS, CLI as well as best practices in CI/CD, TDD, authentication, authorisation and accessibility.
+            
+        </p>
+        <p class="second-para" >
+            Since late 2020 I have mostly been working on various personal projects developing high end technologies and competencies including React, Node, Express, React Native, Expo, Postgres, MongoDB and Docker to name a few.
+        </p>
     </section>
     <section class="skills" id="skills">
         <h2 class="section-heading">Skills</h2>
         <div class="skill-set" >
-            <i class="fab fa-github" alt="GitHub"></i>
-            <i class="fab fa-js" alt="JavaScript"></i>
-            <i class="fab fa-python" alt="Python"></i>
-            <i class="fab fa-node" alt="Node.js"></i>
-            <i class="fab fa-react" alt="React.js"></i>
-            <i class="fab fa-angular" alt="Angular.js"></i>
-            <i class="fab fa-vuejs" alt="Vue.js"></i>
+            <div class="skill-container">
+                <i class="fab fa-github" alt="GitHub"></i>
+                <h3>GitHub</h3>
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-js" alt="JavaScript"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-node" alt="Node.js"></i>
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-react" alt="React.js"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-container">
+                <i class="fas fa-terminal" alt="Command Line Interface"></i>
+                <h3>CLI</h3>
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-angular" alt="Angular.js"></i>
+                <h3>Angular</h3>
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-vuejs" alt="Vue.js"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-container">
+                <i class="fab fa-python" alt="Python"></i>
+                <h3>Python</h3>
+            </div>
         </div>
     </section>
     <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <strong>Project 1</strong>
-            <div class="image-container">
-                <img src="resources/design-system.JPG" alt="Design system website" class="card-pic" />
-            </div>
+            <a class="link" href="https://github.com/christopher-1989/e-commerce-backend" target="_blank">
+                <strong>E-commerce backend project</strong>
+                <div class="image-container">
+                        <img src="resources/e-commerce-backend.png" alt="E-commerce backend project" class="card-pic" />
+                </div>
+            </a>
         </div>
         <div class="project">
-            <strong>Project 2</strong>
+            <a class="link" href="https://github.com/christopher-1989/authentication-flow-express-server-mongodb" target="_blank">
+            <h3><strong>Authentication flow with express backend and mongo database</strong></h3>
             <div class="image-container">
-                <img src="resources/design-system.JPG" alt="Design system website" class="card-pic" />
+                <img src="resources/Auth-flow-screenshot.png" alt="Authentication flow app screenshot" class="card-pic" />
             </div>
+            </a>
         </div>
         <div class="project">
-            <strong>Project 3</strong>
-            <div class="image-container">
-                <img src="resources/design-system.JPG" alt="Design system website" class="card-pic" />
-            </div>
+            <a class="link" href="https://github.com/christopher-1989/website-design-system" target="_blank">
+                <strong>Website design system</strong>
+                <div class="image-container">
+                    <img src="resources/website-design-system.png" alt="Website design system" class="card-pic" />
+                </div>
+            </a>
         </div>
-        <div class="project">
-            <strong>Project 4</strong>
-            <div class="image-container">
-                <img src="resources/design-system.JPG" alt="Design system website" class="card-pic" />
+        <div class="project" id="tmc-project">
+            <strong>10 minute claims - Insurance app</strong>
+            <div class="mobile-image-container">
+                <img src="resources/tmc-account.png" alt="10 minute claims application" class="mobile-card-pic" />
+                <img src="resources/tmc-toolbox.png" alt="10 minute claims application" class="mobile-card-pic" />
+                <img src="resources/tmc-invoice.png" alt="10 minute claims application" class="mobile-card-pic" />
+
             </div>
+
         </div>
     </section>
     <footer>
